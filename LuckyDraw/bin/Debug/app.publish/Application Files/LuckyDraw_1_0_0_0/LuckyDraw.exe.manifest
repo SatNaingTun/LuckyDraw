@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LuckyDraw.exe" version="1.0.0.0" publicKeyToken="5eaff88333f36619" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LuckyDraw" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="LuckyDraw.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckyDraw.exe" size="18944">
+      <assemblyIdentity name="LuckyDraw" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Nawepv38lHfhs3LivyOxKSFAz2w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Manager01-PC\Manager01" issuerKeyHash="75c448ec96c7b3da2b0295564c593a918face414" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Fd1yUCqZTQ7V8Kqo2ap/TRCBcDA=</DigestValue></Reference></SignedInfo><SignatureValue>f6z6q2nyTcW01kLaXl2Rqhmne+QQfaHkurTlM5QZYiZqdRZyP0EWcSrdZFffeZS0zDoEq5u3SUJT/wBMsftghhQqsPmsvYK7Ek7NbTfesni/aI7gyUuq7n70ojPtQ5mCtJlO3X48bXvVKu56dv4yhAl2JTEJqJF9gloJsmlr9LI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>55UMKhJ0ho7Nfz/8v36pzwsuHsqtpcvJ5mEwJtyv5VjU/bMlUQLhCabCylx/W83/wmXdlE++/J0PFVUWV8f1Ghz6aI2nui0HWy//cHQU51HcX9S0XZs5Va0nBVLVtkwWRjMNqy2VAaE6ynRIDqD4+GgM5/O5FmzTOCp7FMBob2U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="307081104d7faad9a8aaf0d50e4d992a5072dd15" Description="" Url=""><as:assemblyIdentity name="LuckyDraw.exe" version="1.0.0.0" publicKeyToken="5eaff88333f36619" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Manager01-PC\Manager01</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/ALqODaEv8RwB4Z4ebCyt1zUis0=</DigestValue></Reference></SignedInfo><SignatureValue>vUYzoct5HLowA5kanVV02qdeVaLlyE6pSNs3dyCpXzPyZn6OkA967OXtUiIZd5eGdj5I5xkWbSzJuOFCXXI+n2EkaRrgxcpzVCbrJjYwqqFHd3ux3HpOq4FLvRvJMyK6/R5KJjgYs6UWB4JK2o945ySe1bHTo5w18YlmB6e3G+o=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>55UMKhJ0ho7Nfz/8v36pzwsuHsqtpcvJ5mEwJtyv5VjU/bMlUQLhCabCylx/W83/wmXdlE++/J0PFVUWV8f1Ghz6aI2nui0HWy//cHQU51HcX9S0XZs5Va0nBVLVtkwWRjMNqy2VAaE6ynRIDqD4+GgM5/O5FmzTOCp7FMBob2U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQUwRRfG4LhJRE1EvetT6xVjANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwATQBhAG4AYQBnAGUAcgAwADEALQBQAEMAXABNAGEAbgBhAGcAZQByADAAMTAeFw0yMzEwMjQxMDAwMjBaFw0yNDEwMjMxNjAwMjBaMDcxNTAzBgNVBAMeLABNAGEAbgBhAGcAZQByADAAMQAtAFAAQwBcAE0AYQBuAGEAZwBlAHIAMAAxMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDnlQwqEnSGjs1/P/y/fqnPCy4eyq2ly8nmYTAm3K/lWNT9syVRAuEJpsLKXH9bzf/CZd2UT778nQ8VVRZXx/UaHPpojae6LQdbL/9wdBTnUdxf1LRdmzlVrScFUtW2TBZGMw2rLZUBoTrKdEgOoPj4aAzn87kWbNM4KnsUwGhvZQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAMYshHglI2AOMT4EPTbgs2yQwBl6xu8yYnDZbYCBmcA+E+NkJ94Uar5EInpjwuq44N9rwzqXHYwyJrjYTrBD9vEzamvaLnGkRMlheZJeosXnS8Or+bfDkZgY9gke1x4NmSkHaCiSa0I+wvGap9InS4SAjoT94YKiclskI8WD7JRB</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
