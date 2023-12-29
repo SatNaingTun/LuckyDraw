@@ -18,6 +18,7 @@ namespace LuckyDraw
                 //    Directory.CreateDirectory(path);
                 //}
                 string filepath = AppDomain.CurrentDomain.BaseDirectory  +"LuckyCupponLog.txt";
+             
                 if (!File.Exists(filepath))
                 {
                     // Create a file to write to.   
@@ -45,6 +46,27 @@ namespace LuckyDraw
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+            }
+        }
+
+        public static void WriteToFile(string item)
+        {
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "LuckyDrawLog.txt";
+            if (!File.Exists(filepath))
+            {
+                using (StreamWriter sw = File.CreateText(filepath))
+                {
+                    sw.WriteLine("Create LuckyDraw at " + DateTime.Now + ": ");
+                    sw.WriteLine("Lucky Draw Item:    " + item);
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.AppendText(filepath))
+                {
+                    sw.WriteLine("Create LuckyDraw at " + DateTime.Now + ": ");
+                    sw.WriteLine("Lucky Draw Item:    " + item);
+                }
             }
         }
 

@@ -16,6 +16,8 @@ namespace LuckyDraw
     {
         string[] luckydrawItem = { "You Won", "You Lose" };
         Image colorWheel = Resources.ColorWheel;
+        bool isFinished;
+        
         public LuckyDraw()
         {
             InitializeComponent();
@@ -34,10 +36,13 @@ namespace LuckyDraw
             pictureBox1.Image = colorWheel;
             waitingTime.Tick += new System.EventHandler(this.waitingTime_Tick);
             this.picRotateTime.Tick += new System.EventHandler(this.picRotateTime_Tick);
+            isFinished = false;
 
             waitingTime.Start();
 
             picRotateTime.Start();
+
+            
             
            
            
@@ -70,9 +75,20 @@ namespace LuckyDraw
 
             
             waitingTime.Stop();
-            pictureBox1.Image = ImageFun.textToImage(getRandom(), new Font("Times New Roman", 50, FontStyle.Bold));
+
+            if (isFinished==false)
+            {
+                string receivedItem = getRandom();
+                pictureBox1.Image = ImageFun.textToImage(receivedItem, new Font("Times New Roman", 50, FontStyle.Bold));
+
+                LuckyCuponLogger.WriteToFile(receivedItem);
+                btnWithDraw.Enabled = true;
+                isFinished = true;
+            }
             
-            btnWithDraw.Enabled = true;
+
+            
+          
 
             
 

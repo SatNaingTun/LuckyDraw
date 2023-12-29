@@ -68,14 +68,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckyDraw.exe" size="891392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LuckyDraw.exe" size="891904">
       <assemblyIdentity name="LuckyDraw" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XWM9mbvxeJC0eXcSmKAPEvMVxLE=</dsig:DigestValue>
+        <dsig:DigestValue>uwXRNn7DtIfBYKwr2w18Xqc9Q6Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
